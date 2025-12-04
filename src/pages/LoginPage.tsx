@@ -22,7 +22,9 @@ function LoginPage(): JSX.Element {
       <div className="min-h-screen flex items-start justify-center px-4 py-20">
         <div className="glass backdrop-stable rounded-2xl p-8 w-full max-w-md shadow-2xl">
           <div className="text-center mb-8">
-            <h1 className="text-3xl font-bold text-white mb-2">Welcome Back</h1>
+            <h1 className="text-3xl font-bold text-white mb-2">
+              Welcome Back!
+            </h1>
             <p className="text-white/70">Sign in to continue to your account</p>
           </div>
 
