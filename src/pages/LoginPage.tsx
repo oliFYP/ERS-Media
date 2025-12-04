@@ -14,7 +14,7 @@ function LoginPage(): JSX.Element {
           src={CompanyLogo}
           alt="Company Logo"
           className="h-auto object-contain"
-          style={{ width: "120px" }}
+          style={{ width: "200px" }}
         />
       </div>
 
