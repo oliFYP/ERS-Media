@@ -1,19 +1,22 @@
-import { useState } from 'react';
-import { Mail, Lock } from 'lucide-react';
+import { useState } from "react";
+import { Mail, Lock } from "lucide-react";
 
 export function LoginForm() {
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    console.log('Login attempt:', { email, password });
+    console.log("Login attempt:", { email, password });
   };
 
   return (
     <form onSubmit={handleSubmit} className="space-y-6">
       <div>
-        <label htmlFor="email" className="block text-sm font-medium text-white/90 mb-2">
+        <label
+          htmlFor="email"
+          className="block text-sm font-medium text-white/90 mb-2"
+        >
           Email Address
         </label>
         <div className="relative">
@@ -33,7 +36,10 @@ export function LoginForm() {
       </div>
 
       <div>
-        <label htmlFor="password" className="block text-sm font-medium text-white/90 mb-2">
+        <label
+          htmlFor="password"
+          className="block text-sm font-medium text-white/90 mb-2"
+        >
           Password
         </label>
         <div className="relative">
@@ -60,7 +66,10 @@ export function LoginForm() {
           />
           <span className="ml-2 text-white/70">Remember me</span>
         </label>
-        <a href="#" className="text-[#d68a2d] hover:text-[#e39a3d] transition-colors">
+        <a
+          href="#"
+          className="text-[#d68a2d] hover:text-[#e39a3d] transition-colors"
+        >
           Forgot password?
         </a>
       </div>
